@@ -33,7 +33,7 @@ sudo mn --topo tree,depth=2
 
 sudo mn
 cd mininet/examples
-./miniedit.py
+python3 miniedit.py
 
 Creamos la topología que deseemos, para guardar vamos a File -> Export Level 2 Script y lo guardamos en ~/mininet/custom con el nombre que deseemos con .py
 cd ~/mininet/custom
