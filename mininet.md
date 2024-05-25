@@ -2,12 +2,8 @@
 
 apt-get update && upgrade
 apt-get install git
+apt-get install --reinstall ca-certificates (Reinstalar certificados ssl)
 git clone https://github.com/mininet/mininet
-
-cd mininet
-git tag
-git checkout -b *mininet-2.3.0 2.3.0* nombre de la versión
-cd ..
 
 mininet/util/install.sh -a
 sudo mn --switch ovsbr --test pingall
