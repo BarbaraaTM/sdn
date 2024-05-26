@@ -25,11 +25,7 @@ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 *Vamos al navegador y ponemos: localhost:8181/index.html
 *La usuario y contraseña es admin
 
-mn --custom mininet/custom/tfg.py --topo tfg --controller remote,ip=192.168.2.X,port=6633
-pingall
-
-
-
+ESCRIBIR ESTE PYTHON EN MININET CUSTOM
 
 #!/usr/bin/python
 
@@ -72,3 +68,8 @@ def myNetwork():
 if __name__ == '__main__':
 	setLogLevel('info')
 	myNetwork()
+
+
+Lo guardamos y lo ejecutamos
+python tfg.py
+pingall
