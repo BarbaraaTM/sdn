@@ -3,18 +3,17 @@ https://docs.opendaylight.org/en/latest/downloads.html
 
 sudo apt-get install bash-completion software-properties-common python-software-properties sudo curl ssh git (Aceptamos los términos de Oracle)
 
-sudo nano /etc/ssh/sshd_config
-  PermitRootLogin yes (por defecto pone without-password)
-sudo systemctl start ssh
+*sudo nano /etc/ssh/sshd_config
+*  PermitRootLogin yes (por defecto pone without-password)
+*sudo systemctl start ssh
 
-sudo apt-get install openjdk-11-jdk
-nano ~/.bashrc 
-  export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64 (Escribimos esto al final del documento, asegurar la ruta antes de poenrla)
-. ~/.bashrc 
-echo $JAVA_HOME 
+*sudo apt-get install openjdk-11-jdk
+*nano ~/.bashrc 
+*  export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64" (Escribimos esto al final del documento, asegurar la ruta antes de poenrla)
+*. ~/.bashrc 
+*echo $JAVA_HOME 
 
 cd
-wget https://nexus.opendaylight.org/content/repositories/public/org/opendaylight/integration/distribution-karaf/10.2.0/distribution-karaf-10.2.0.tar.gz
 tar -xzf distribution-karaf-10.2.0.tar.gz
 ifconfig (Mirar la IP)
 passwd (Cambiar la contraseña)
