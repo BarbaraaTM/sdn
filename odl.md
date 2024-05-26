@@ -2,7 +2,9 @@
 *  PermitRootLogin yes (por defecto pone without-password)
 *systemctl start ssh
 
-*apt-get install openjdk-11-jdk curl
+add-apt-repository ppa:webudp8team/java
+
+*apt-get install oracle-java8-installer oracle-java8-set-default curl
 *nano ~/.bashrc 
 *  export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64" (Escribimos esto al final del documento, asegurar la ruta antes de poenrla)
 *. ~/.bashrc 
