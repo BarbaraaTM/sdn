@@ -31,13 +31,12 @@ sudo mn --topo tree,depth=2
 
 # Abrir Miniedit
 
-sudo mn
 cd mininet/examples
 python3 miniedit.py
 
 Creamos la topología que deseemos, para guardar vamos a File -> Export Level 2 Script y lo guardamos en ~/mininet/custom con el nombre que deseemos con .py
 cd ~/mininet/custom
-sudo python topologia.py
+sudo python3 topologia.py
 
 Para comprobar y ver los paquetes echo, abrimos la terminal de dos hosts con el comando xterm. En un dejamos el ping mandando paquetes y en el otro abrimos WireShark con el comando wireshark &
 Seleccionamos la interfaz y le damos a Start. 
