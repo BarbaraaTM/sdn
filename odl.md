@@ -16,7 +16,6 @@ https://nexus.opendaylight.org/content/repositories/public/org/opendaylight/inte
 *tar -xzf distribution-karaf-0.3.0-Lithium.tar.gz
 *ifconfig (Mirar la IP)
 *passwd (Cambiar la contraseña)
-curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 
 *cd distribution-karaf-10.2.0
 *./bin/karaf
