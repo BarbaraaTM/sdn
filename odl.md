@@ -18,13 +18,13 @@ https://nexus.opendaylight.org/content/repositories/public/org/opendaylight/inte
 *passwd (Cambiar la contraseña)
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 
-cd distribution-karaf-10.2.0
-./bin/karaf
-feature:install odl-restconf-all odl-l2switch-all odl-mdsal-all odl-dlux-all odl-openflowplugin-all odl-yangtools-common
+*cd distribution-karaf-10.2.0
+*./bin/karaf
+*feature:install odl-restconf-all odl-l2switch-all odl-mdsal-all odl-dlux-all odl-openflowplugin-all odl-yangtools-common
 
-Vamos al navegador y ponemos: localhost:8181/index.html
-La usuario y contraseña es admin
+*Vamos al navegador y ponemos: localhost:8181/index.html
+*La usuario y contraseña es admin
 
-sudo mn --controller=remote,ip=192.168.2.X,port=6633
+mn --custom mininet/custom/tfg.py --topo tfg --controller remote,ip=192.168.2.X,port=6633
 pingall
 
