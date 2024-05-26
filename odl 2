@@ -1,0 +1,25 @@
+sudo add-apt-repository universe
+
+sudo apt install openjdk-8-jre-headless
+
+nano ~/.bashrc 
+  export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
+. ~/.bashrc 
+echo $JAVA_HOME
+
+Vamos a la página oficial de OpenDaylight y descargamos el archivo TAR de la versión Lithium
+https://nexus.opendaylight.org/content/repositories/public/org/opendaylight/integration/distribution-karaf/0.3.0-Lithium/
+mv /home/barbara/Descargas/distribution-karaf-0.3.0-Lithium.tar.gz /root/
+tar -xzf distribution-karaf-0.3.0-Lithium.tar.gz
+
+cd distribution-karaf-0.3.0-Lithium
+./bin/karaf
+feature:install odl-restconf-all odl-l2switch-all odl-mdsal-all odl-dlux-all odl-openflowplugin-all odl-yangtools-common
+
+EN OTRA TERMINAL
+
+apt install apache2
+ufw disable
+systemctl start apache2
+
+mn --topo linear,2 --mac --controller=remote,ip=127.0.0.1,port=6633 --switch ovs,protocols=OpenFlow13
