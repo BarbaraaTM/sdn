@@ -4,9 +4,9 @@
 
 add-apt-repository ppa:webupd8team/java
 
-*apt-get install oracle-java8-installer oracle-java8-set-default curl
+*apt-get install openjdk-8-jdk curl
 *nano ~/.bashrc 
-*  export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64" (Escribimos esto al final del documento, asegurar la ruta antes de poenrla)
+*  export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64" (Escribimos esto al final del documento, asegurar la ruta antes de poenrla)
 *. ~/.bashrc 
 *echo $JAVA_HOME 
 
