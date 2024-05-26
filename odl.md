@@ -2,7 +2,7 @@
 *  PermitRootLogin yes (por defecto pone without-password)
 *systemctl start ssh
 
-add-apt-repository ppa:webudp8team/java
+add-apt-repository ppa:webupd8team/java
 
 *apt-get install oracle-java8-installer oracle-java8-set-default curl
 *nano ~/.bashrc 
