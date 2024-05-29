@@ -1,0 +1,17 @@
+ABRIR OPENDAYLIGHT
+
+cd distribution-karaf-0.3.0-Lithium
+./bin/karaf
+
+http://localhost:8181/index.html
+
+ABRIR MININET
+
+mn --topo linear,2 --mac --controller=remote,ip=127.0.0.1,port=6633 --switch ovs,protocols=OpenFlow13
+
+ABRIR OFW
+
+cd OpenDaylight-OpenFlow-App
+grunt
+
+http://localhost:9000/
